@@ -1,0 +1,10 @@
+-I.
+-I./build/config/
+-I~/esp/esp-idf/components/**
+-I~/esp/esp-idf/components/esp_netif/linux/stubs/include/
+-include ./build/config/sdkconfig.h
+-std=c11
+-Wall
+-DCONFIG_FREERTOS_HZ=1000
+-DCONFIG_IDF_TARGET="esp32"
+-query-driver=~/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf

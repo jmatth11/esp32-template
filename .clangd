@@ -1,0 +1,16 @@
+CompileFlags:
+  Add: [
+    -isysroot=~/esp/esp-idf/tools/cmake/,
+    -mlong-calls,
+  ]
+  Remove: [
+    -fno-tree-switch-conversion,
+    -fno-shrink-wrap,
+    -mtext-section-literals,
+    -mlongcalls,
+    -fstrict-volatile-bitfields,
+    -free,
+    -fipa-pta,
+  ]
+Diagnostics:
+  Suppress: "pp_including_mainfile_in_preamble"
